@@ -5,10 +5,9 @@
 #include <vector>
 
 int main() {
-  int x = 0;
-  int b = 0;
-  std::cout << &x - &b << "\n";//1
-  std::cout << (long long)&x - (long long)&b;//2
+  int a[2];
+  std::cout << &a[0] - &a[1] << "\n";//1
+  std::cout << (long long)&a[0] - (long long)&a[1];//2
   //1 = ?
   //2 = ?
   //why
